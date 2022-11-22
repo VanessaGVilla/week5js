@@ -20,14 +20,14 @@ function range(start,end) {
 // Example output:
 // console.log(sum(range(1, 10))); // returns 55
 
-sum = (numbersArray) => {
-    let sum=0;
-     numbersArray.forEach((i)=>{
+Sum = (numbersArray)  => {
+  let sum=0;
+      numbersArray.forEach(i)=>{
       sum+=i;
      })
-     return sum;
-   }
-   console.log(sum(range(1, 10)));
+   return sum;
+  }
+console.log(sum(range(1, 10)));
 // → 55
 
 // 3. Arrays have a reverse method that changes the array by inverting the order in which
