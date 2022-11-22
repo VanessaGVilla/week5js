@@ -44,4 +44,28 @@ sum = (numbersArray) => {
 // reverseArrayInPlace(arrayValue);
 // console.log(arrayValue); // outputs [5, 4, 3, 2, 1]
 
+reverseArray = (arr) => {
+ let reversed=[]
+ for(let i=arr.length-1; i>=0; i--){
+      reversed.push(arr[i]); 
+    }
+  return reversed;
+}
+console.log(reverseArray(["A", "B", "C"]));
+// → ["C", "B", "A"];
+reverseArrayInPlace = (arr) => {
+  let count=0;
+  for(let i=0; i<=Math.floor(arr.length/2); i++){
+    var ascendingEl= arr[i];
+ 
+    arr[i] = arr[arr.length-1-i]
+    arr[arr.length-1-i]=ascendingEl;
+  }
+ return arr;
+}
+var arrayValue = [1, 2, 3, 4, 5];
+reverseArrayInPlace(arrayValue);
+console.log(arrayValue);
+// → [5, 4, 3, 2, 1]
+
 
