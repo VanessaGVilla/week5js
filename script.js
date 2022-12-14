@@ -12,8 +12,6 @@ function range(start,end) {
   }
   return array;
   }
-  console.log(range(1,10)); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
 
 
 // 2. Next, write a sum function that takes an array of numbers and returns the sum of
@@ -21,14 +19,14 @@ function range(start,end) {
 // Example output:
 // console.log(sum(range(1, 10))); // returns 55
 
-Sum = (numbersArray)  => {
-  let sum=0;
-      numbersArray.forEach(i)=>{
+sum = (numbersArray) => {
+    let sum=0;
+     numbersArray.forEach((i)=>{
       sum+=i;
      })
-   return sum;
-  }
-console.log(sum(range(1, 10)));
+     return sum;
+   }
+   console.log(sum(range(1, 10)));
 // → 55
 
 // 3. Arrays have a reverse method that changes the array by inverting the order in which
@@ -68,5 +66,3 @@ var arrayValue = [1, 2, 3, 4, 5];
 reverseArrayInPlace(arrayValue);
 console.log(arrayValue);
 // → [5, 4, 3, 2, 1]
-
-
